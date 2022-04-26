@@ -30,15 +30,15 @@
         {
             this.Painel = new System.Windows.Forms.TabControl();
             this.guiaPrincipal = new System.Windows.Forms.TabPage();
-            this.lbBTN = new System.Windows.Forms.Label();
-            this.lbSB = new System.Windows.Forms.Label();
-            this.lbBB = new System.Windows.Forms.Label();
-            this.lbUTG = new System.Windows.Forms.Label();
-            this.lbUTG1 = new System.Windows.Forms.Label();
-            this.lbMP1 = new System.Windows.Forms.Label();
-            this.lbMP2 = new System.Windows.Forms.Label();
-            this.lbHJ = new System.Windows.Forms.Label();
-            this.lbCO = new System.Windows.Forms.Label();
+            this.btSB = new System.Windows.Forms.Button();
+            this.btBTN = new System.Windows.Forms.Button();
+            this.btCO = new System.Windows.Forms.Button();
+            this.btHJ = new System.Windows.Forms.Button();
+            this.btMP2 = new System.Windows.Forms.Button();
+            this.btMP1 = new System.Windows.Forms.Button();
+            this.btUTG1 = new System.Windows.Forms.Button();
+            this.btUTG = new System.Windows.Forms.Button();
+            this.btBB = new System.Windows.Forms.Button();
             this.Painel.SuspendLayout();
             this.guiaPrincipal.SuspendLayout();
             this.SuspendLayout();
@@ -56,15 +56,15 @@
             // 
             this.guiaPrincipal.BackgroundImage = global::HandRanges.Properties.Resources.mesa;
             this.guiaPrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guiaPrincipal.Controls.Add(this.lbCO);
-            this.guiaPrincipal.Controls.Add(this.lbHJ);
-            this.guiaPrincipal.Controls.Add(this.lbMP2);
-            this.guiaPrincipal.Controls.Add(this.lbMP1);
-            this.guiaPrincipal.Controls.Add(this.lbUTG1);
-            this.guiaPrincipal.Controls.Add(this.lbUTG);
-            this.guiaPrincipal.Controls.Add(this.lbBB);
-            this.guiaPrincipal.Controls.Add(this.lbSB);
-            this.guiaPrincipal.Controls.Add(this.lbBTN);
+            this.guiaPrincipal.Controls.Add(this.btSB);
+            this.guiaPrincipal.Controls.Add(this.btBTN);
+            this.guiaPrincipal.Controls.Add(this.btCO);
+            this.guiaPrincipal.Controls.Add(this.btHJ);
+            this.guiaPrincipal.Controls.Add(this.btMP2);
+            this.guiaPrincipal.Controls.Add(this.btMP1);
+            this.guiaPrincipal.Controls.Add(this.btUTG1);
+            this.guiaPrincipal.Controls.Add(this.btUTG);
+            this.guiaPrincipal.Controls.Add(this.btBB);
             this.guiaPrincipal.Location = new System.Drawing.Point(4, 22);
             this.guiaPrincipal.Name = "guiaPrincipal";
             this.guiaPrincipal.Padding = new System.Windows.Forms.Padding(3);
@@ -73,113 +73,158 @@
             this.guiaPrincipal.Text = "tabPage2";
             this.guiaPrincipal.UseVisualStyleBackColor = true;
             // 
-            // lbBTN
+            // btSB
             // 
-            this.lbBTN.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lbBTN.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBTN.Location = new System.Drawing.Point(368, 125);
-            this.lbBTN.Name = "lbBTN";
-            this.lbBTN.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbBTN.Size = new System.Drawing.Size(76, 25);
-            this.lbBTN.TabIndex = 0;
-            this.lbBTN.Text = "BTN";
-            this.lbBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btSB.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btSB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btSB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btSB.ForeColor = System.Drawing.Color.Black;
+            this.btSB.Location = new System.Drawing.Point(519, 123);
+            this.btSB.Margin = new System.Windows.Forms.Padding(0);
+            this.btSB.Name = "btSB";
+            this.btSB.Size = new System.Drawing.Size(78, 27);
+            this.btSB.TabIndex = 8;
+            this.btSB.Text = "SB";
+            this.btSB.UseVisualStyleBackColor = false;
+            this.btSB.Click += new System.EventHandler(this.btSB_Click);
+            this.btSB.MouseEnter += new System.EventHandler(this.btSB_MouseEnter);
+            this.btSB.MouseLeave += new System.EventHandler(this.btSB_MouseLeave);
             // 
-            // lbSB
+            // btBTN
             // 
-            this.lbSB.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lbSB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSB.Location = new System.Drawing.Point(519, 125);
-            this.lbSB.Name = "lbSB";
-            this.lbSB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbSB.Size = new System.Drawing.Size(76, 25);
-            this.lbSB.TabIndex = 1;
-            this.lbSB.Text = "SB";
-            this.lbSB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btBTN.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btBTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btBTN.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btBTN.ForeColor = System.Drawing.Color.Black;
+            this.btBTN.Location = new System.Drawing.Point(369, 124);
+            this.btBTN.Margin = new System.Windows.Forms.Padding(0);
+            this.btBTN.Name = "btBTN";
+            this.btBTN.Size = new System.Drawing.Size(78, 27);
+            this.btBTN.TabIndex = 7;
+            this.btBTN.Text = "BTN";
+            this.btBTN.UseVisualStyleBackColor = false;
+            this.btBTN.Click += new System.EventHandler(this.btBTN_Click);
+            this.btBTN.MouseEnter += new System.EventHandler(this.btBTN_MouseEnter);
+            this.btBTN.MouseLeave += new System.EventHandler(this.btBTN_MouseLeave);
             // 
-            // lbBB
+            // btCO
             // 
-            this.lbBB.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lbBB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBB.Location = new System.Drawing.Point(643, 243);
-            this.lbBB.Name = "lbBB";
-            this.lbBB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbBB.Size = new System.Drawing.Size(76, 25);
-            this.lbBB.TabIndex = 2;
-            this.lbBB.Text = "BB";
-            this.lbBB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btCO.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btCO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btCO.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btCO.ForeColor = System.Drawing.Color.Black;
+            this.btCO.Location = new System.Drawing.Point(214, 124);
+            this.btCO.Margin = new System.Windows.Forms.Padding(0);
+            this.btCO.Name = "btCO";
+            this.btCO.Size = new System.Drawing.Size(78, 27);
+            this.btCO.TabIndex = 6;
+            this.btCO.Text = "CO";
+            this.btCO.UseVisualStyleBackColor = false;
+            this.btCO.Click += new System.EventHandler(this.btCO_Click);
+            this.btCO.MouseEnter += new System.EventHandler(this.btCO_MouseEnter);
+            this.btCO.MouseLeave += new System.EventHandler(this.btCO_MouseLeave);
             // 
-            // lbUTG
+            // btHJ
             // 
-            this.lbUTG.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lbUTG.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUTG.Location = new System.Drawing.Point(564, 368);
-            this.lbUTG.Name = "lbUTG";
-            this.lbUTG.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbUTG.Size = new System.Drawing.Size(76, 25);
-            this.lbUTG.TabIndex = 3;
-            this.lbUTG.Text = "UTG";
-            this.lbUTG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btHJ.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btHJ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btHJ.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btHJ.ForeColor = System.Drawing.Color.Black;
+            this.btHJ.Location = new System.Drawing.Point(91, 242);
+            this.btHJ.Margin = new System.Windows.Forms.Padding(0);
+            this.btHJ.Name = "btHJ";
+            this.btHJ.Size = new System.Drawing.Size(78, 27);
+            this.btHJ.TabIndex = 5;
+            this.btHJ.Text = "HJ";
+            this.btHJ.UseVisualStyleBackColor = false;
+            this.btHJ.Click += new System.EventHandler(this.btHJ_Click);
+            this.btHJ.MouseEnter += new System.EventHandler(this.btHJ_MouseEnter);
+            this.btHJ.MouseLeave += new System.EventHandler(this.btHJ_MouseLeave);
             // 
-            // lbUTG1
+            // btMP2
             // 
-            this.lbUTG1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lbUTG1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUTG1.Location = new System.Drawing.Point(434, 376);
-            this.lbUTG1.Name = "lbUTG1";
-            this.lbUTG1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbUTG1.Size = new System.Drawing.Size(76, 25);
-            this.lbUTG1.TabIndex = 4;
-            this.lbUTG1.Text = "UTG + 1";
-            this.lbUTG1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btMP2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btMP2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btMP2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btMP2.ForeColor = System.Drawing.Color.Black;
+            this.btMP2.Location = new System.Drawing.Point(172, 366);
+            this.btMP2.Margin = new System.Windows.Forms.Padding(0);
+            this.btMP2.Name = "btMP2";
+            this.btMP2.Size = new System.Drawing.Size(78, 27);
+            this.btMP2.TabIndex = 4;
+            this.btMP2.Text = "MP2";
+            this.btMP2.UseVisualStyleBackColor = false;
+            this.btMP2.Click += new System.EventHandler(this.btMP2_Click);
+            this.btMP2.MouseEnter += new System.EventHandler(this.btMP2_MouseEnter);
+            this.btMP2.MouseLeave += new System.EventHandler(this.btMP2_MouseLeave);
             // 
-            // lbMP1
+            // btMP1
             // 
-            this.lbMP1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lbMP1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMP1.Location = new System.Drawing.Point(306, 375);
-            this.lbMP1.Name = "lbMP1";
-            this.lbMP1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbMP1.Size = new System.Drawing.Size(76, 25);
-            this.lbMP1.TabIndex = 5;
-            this.lbMP1.Text = "MP1";
-            this.lbMP1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btMP1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btMP1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btMP1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btMP1.ForeColor = System.Drawing.Color.Black;
+            this.btMP1.Location = new System.Drawing.Point(305, 374);
+            this.btMP1.Margin = new System.Windows.Forms.Padding(0);
+            this.btMP1.Name = "btMP1";
+            this.btMP1.Size = new System.Drawing.Size(78, 27);
+            this.btMP1.TabIndex = 3;
+            this.btMP1.Text = "MP1";
+            this.btMP1.UseVisualStyleBackColor = false;
+            this.btMP1.Click += new System.EventHandler(this.btMP1_Click);
+            this.btMP1.MouseEnter += new System.EventHandler(this.btMP1_MouseEnter);
+            this.btMP1.MouseLeave += new System.EventHandler(this.btMP1_MouseLeave);
             // 
-            // lbMP2
+            // btUTG1
             // 
-            this.lbMP2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lbMP2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMP2.Location = new System.Drawing.Point(173, 367);
-            this.lbMP2.Name = "lbMP2";
-            this.lbMP2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbMP2.Size = new System.Drawing.Size(76, 25);
-            this.lbMP2.TabIndex = 6;
-            this.lbMP2.Text = "MP2";
-            this.lbMP2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btUTG1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btUTG1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btUTG1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btUTG1.ForeColor = System.Drawing.Color.Black;
+            this.btUTG1.Location = new System.Drawing.Point(433, 374);
+            this.btUTG1.Margin = new System.Windows.Forms.Padding(0);
+            this.btUTG1.Name = "btUTG1";
+            this.btUTG1.Size = new System.Drawing.Size(78, 27);
+            this.btUTG1.TabIndex = 2;
+            this.btUTG1.Text = "UTG + 1";
+            this.btUTG1.UseVisualStyleBackColor = false;
+            this.btUTG1.Click += new System.EventHandler(this.btUTG1_Click);
+            this.btUTG1.MouseEnter += new System.EventHandler(this.btUTG1_MouseEnter);
+            this.btUTG1.MouseLeave += new System.EventHandler(this.btUTG1_MouseLeave);
             // 
-            // lbHJ
+            // btUTG
             // 
-            this.lbHJ.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lbHJ.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHJ.Location = new System.Drawing.Point(92, 244);
-            this.lbHJ.Name = "lbHJ";
-            this.lbHJ.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbHJ.Size = new System.Drawing.Size(76, 25);
-            this.lbHJ.TabIndex = 7;
-            this.lbHJ.Text = "HJ";
-            this.lbHJ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btUTG.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btUTG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btUTG.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btUTG.ForeColor = System.Drawing.Color.Black;
+            this.btUTG.Location = new System.Drawing.Point(562, 366);
+            this.btUTG.Margin = new System.Windows.Forms.Padding(0);
+            this.btUTG.Name = "btUTG";
+            this.btUTG.Size = new System.Drawing.Size(78, 27);
+            this.btUTG.TabIndex = 1;
+            this.btUTG.Text = "UTG";
+            this.btUTG.UseVisualStyleBackColor = false;
+            this.btUTG.Click += new System.EventHandler(this.btUTG_Click);
+            this.btUTG.MouseEnter += new System.EventHandler(this.btUTG_MouseEnter);
+            this.btUTG.MouseLeave += new System.EventHandler(this.btUTG_MouseLeave);
             // 
-            // lbCO
+            // btBB
             // 
-            this.lbCO.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lbCO.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCO.Location = new System.Drawing.Point(215, 125);
-            this.lbCO.Name = "lbCO";
-            this.lbCO.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbCO.Size = new System.Drawing.Size(76, 25);
-            this.lbCO.TabIndex = 8;
-            this.lbCO.Text = "CO";
-            this.lbCO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btBB.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btBB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btBB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btBB.ForeColor = System.Drawing.Color.Black;
+            this.btBB.Location = new System.Drawing.Point(643, 244);
+            this.btBB.Margin = new System.Windows.Forms.Padding(0);
+            this.btBB.Name = "btBB";
+            this.btBB.Size = new System.Drawing.Size(78, 27);
+            this.btBB.TabIndex = 0;
+            this.btBB.Text = "BB";
+            this.btBB.UseVisualStyleBackColor = false;
+            this.btBB.Click += new System.EventHandler(this.btBB_Click);
+            this.btBB.MouseEnter += new System.EventHandler(this.btBB_MouseEnter);
+            this.btBB.MouseLeave += new System.EventHandler(this.btBB_MouseLeave);
             // 
             // HandRanges
             // 
@@ -200,15 +245,15 @@
 
         private System.Windows.Forms.TabControl Painel;
         private System.Windows.Forms.TabPage guiaPrincipal;
-        private System.Windows.Forms.Label lbSB;
-        private System.Windows.Forms.Label lbBTN;
-        private System.Windows.Forms.Label lbHJ;
-        private System.Windows.Forms.Label lbMP2;
-        private System.Windows.Forms.Label lbMP1;
-        private System.Windows.Forms.Label lbUTG1;
-        private System.Windows.Forms.Label lbUTG;
-        private System.Windows.Forms.Label lbBB;
-        private System.Windows.Forms.Label lbCO;
+        private System.Windows.Forms.Button btBB;
+        private System.Windows.Forms.Button btUTG;
+        private System.Windows.Forms.Button btMP1;
+        private System.Windows.Forms.Button btUTG1;
+        private System.Windows.Forms.Button btMP2;
+        private System.Windows.Forms.Button btHJ;
+        private System.Windows.Forms.Button btCO;
+        private System.Windows.Forms.Button btBTN;
+        private System.Windows.Forms.Button btSB;
     }
 }
 
